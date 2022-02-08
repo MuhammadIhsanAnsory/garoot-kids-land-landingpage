@@ -1,0 +1,13 @@
+body {
+    // font-family: $roboto-reg;
+    font-family: 'Klee One', cursive;
+    color: $text;
+    
+    main {
+        background-color: $white;
+        position: relative;
+    }
+    p, li{
+        font-size: 18px;
+    }
+}

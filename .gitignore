@@ -1,0 +1,15 @@
+# Node Package Manager
+/node_modules
+npm-debug.log
+/bower_components
+.tmp/*
+
+# IDE
+/.idea/
+
+#Others
+.DS_Store
+/.sass-cache/
+.htaccess
+.htaccess-h5bp
+/nbproject/

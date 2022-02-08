@@ -1,0 +1,161 @@
+img{
+    max-width: 100%;
+}
+.sect-landing{
+    padding: 4rem 0;
+}
+
+.sect-play{
+    padding: 5rem 0;
+}
+.sect-booking{
+    padding: 5rem 0;
+    background-color: $green;
+    color: $white;
+}
+
+.sect-loc{
+    padding: 5rem 0;
+}
+.sect-gallery{
+    padding: 4rem 0;
+}
+.sect-why{
+    padding: 4rem 0;
+}
+
+
+
+.card-form{
+    background-color: $white;
+    color: $text;
+    padding: 3rem 2rem;
+    box-shadow: 0 5px 8px 5px rgba(0,0,0,.06);
+    -webkit-transition: all 120ms ease-in;
+    -ms-transition: all 120ms ease-in;
+    -moz-transition: all 120ms ease-in;
+    transition: all 120ms ease-in;
+}
+.card-form:hover{
+    box-shadow: 0 10px 13px 5px rgba(0,0,0,.10);
+    -webkit-transition: all 120ms ease-in;
+    -ms-transition: all 120ms ease-in;
+    -moz-transition: all 120ms ease-in;
+    transition: all 120ms ease-in;
+}
+
+.container-gallery {
+  width: 96%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-gallery {
+    position: relative;  
+    width:100%;
+    -webkit-transition: all 120ms ease-in;
+    -ms-transition: all 120ms ease-in;
+    -moz-transition: all 120ms ease-in;
+    transition: all 120ms ease-in;
+    img{
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+.image-gallery:before {
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;left:0;right:0;
+  background-color:rgba(0,0,0,0);
+  -webkit-transition: all 120ms ease-in;
+  -ms-transition: all 120ms ease-in;
+  -moz-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+}
+.image-gallery:hover::before {
+  background-color:rgba(0,0,0,0.5);
+  -webkit-transition: all 120ms ease-in;
+  -ms-transition: all 120ms ease-in;
+  -moz-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+}
+.image-gallery img {
+  display:block;
+  -webkit-transition: all 120ms ease-in;
+  -ms-transition: all 120ms ease-in;
+  -moz-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+}
+.image-gallery button {
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity:0;
+  -webkit-transition: all 120ms ease-in;
+  -ms-transition: all 120ms ease-in;
+  -moz-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+} 
+.image-gallery:hover button {   
+  opacity: 1;
+  -webkit-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+  
+.box-why1
+{
+  color: #fff;
+  background-color: $green;
+  width: 90%;
+  height: 16rem;
+  display:inline-block;
+  border:0;
+  position: relative;
+  padding: 1rem;
+  -webkit-transition: all 150ms ease-in;
+  -ms-transition: all 150ms ease-in;
+  -moz-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+}
+.box-why1:hover
+{
+  background-color: $orange;
+  z-index: 2;
+  -webkit-transition: all 100ms ease-in;
+  -ms-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+  
+.box-why2
+{
+  color: #fff;
+  background-color: $yellow;
+  width: 90%;
+  height: 16rem;
+  display:inline-block;
+  border:0;
+  position: relative;
+  padding: 1rem;
+  -webkit-transition: all 150ms ease-in;
+  -ms-transition: all 150ms ease-in;
+  -moz-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+}
+.box-why2:hover
+{
+  background-color: $orange;
+  z-index: 2;
+  -webkit-transition: all 100ms ease-in;
+  -ms-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+

@@ -1,0 +1,21 @@
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Base
+@import "base/_typoghrapy.scss";
+
+// helpers
+@import "helpers/_mixin";
+@import "helpers/_variable";
+@import "helpers/_component";
+@import "helpers/_svg";
+
+// layout
+@import "layout/_header";
+@import "layout/_content"; 
+@import "layout/_footer";
+
+// pages
+@import "pages/_home";
+@import "pages/_article";
+@import "pages/_contact";

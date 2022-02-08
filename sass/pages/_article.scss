@@ -1,0 +1,107 @@
+.newsevent {
+    padding: 100px 0;
+    .category {
+        margin: 0 0 30px 0;
+        padding: 0;
+        overflow: auto;
+        li {
+            display: inline;
+            float: left;
+            border: none;
+            padding: 2px 20px 2px 0;
+            margin-right: 20px;
+            border-right: 1px solid $border;
+            &:last-child {
+                border: none;
+            }
+            a {
+                text-decoration: none;
+                color: $text;
+                &:hover {
+                    color: $green;
+                }
+            }
+            &.active {
+                a {
+                    color: $green;
+                }
+            }
+        }
+    }
+    .card {
+        cursor: pointer;
+        border: none;
+        overflow: hidden;
+        &:hover {
+            .card-thumbnails {
+                transform: scale(1.2);
+            }
+        }
+        .card-thumbnails {
+            height: 280px;
+            background-size: cover;
+            @include transition(all, .5s, ease-in-out);
+        }
+        .card-img-overlay {
+            top: auto;
+            background: $dark;
+            background: -webkit-linear-gradient(to top, rgba($dark, .5), transparent);
+            background: linear-gradient(to top, rgba($dark, .5), transparent);
+        }
+        .card-time {
+            font-size: 12px;
+            color: $dark;
+        }
+    }
+    .page-link {
+        color: $dark;
+        border: none;
+    } 
+    a {
+        color: $text;
+        text-decoration: none;
+        &:hover {
+            color: $green;
+        }
+    }
+}
+.article {
+    padding: 100px 0;
+    .detail-article {
+        .img-article {
+            width: 100%;
+            max-width: 500px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        a {
+            color: $green;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .article-sidebar {
+        .list-group-item {
+            .img-article {
+                width: 80px;
+                height: 60px;
+                background-size: cover;
+                margin: 5px 0;
+            }
+            p {
+                margin: 0;
+                line-height: 18px;
+            }
+            span {
+                font-size: 12px;
+                color: $green;
+            }
+            &.active {
+                background-color: $green;
+                border-color: $green;
+            }
+        }
+    }
+}

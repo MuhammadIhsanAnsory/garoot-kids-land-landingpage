@@ -1,0 +1,164 @@
+.padding-none {
+    padding: 0;
+}
+strong {
+    color: $black; 
+}
+
+.btn-primary, .btn-primary.active {
+    background: $green;
+    border: 1px solid $green;
+    color: $white;
+    &:hover, &:focus {
+        background-color: darken($green, 10);
+        text-decoration: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: darken($green, 10);
+    }
+    .feather {
+        width: 14px;
+        height: 14px;
+        margin-top: -2px;
+    }
+}
+
+.shake {
+    animation: 2s shake infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: skewX(-15deg); }
+    5% { transform: skewX(15deg); }
+    10% { transform: skewX(-15deg); }
+    15% { transform: skewX(15deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }
+}
+
+// forms
+.form-label, .form-check-label {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.form-check-input {
+    &:checked, &:focus {
+        background-color: $green;
+        border-color: $green;
+        box-shadow: $green; 
+    }
+}
+.form-control {
+    padding: 14px 20px;
+    &:focus {
+        border-color: $border;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+// share
+.floatshare {
+    position: fixed;
+    z-index: 3;    
+    left: 0;
+    bottom: 88px;
+    
+    a {
+        display: block;
+        white-space: nowrap;
+        color: $white;
+        text-decoration: none;
+        position: relative;
+        left: -50px;
+        padding: 5px 10px 5px 10px;
+        background-color: $green;
+        border: 1px solid rgba($white, 0.5);
+        @include transform(rotate(-90deg));
+        .icon-whatsapp {
+            width: 16px;
+            height: 16px;
+            background-size: cover;
+            display: inline-block;
+        }
+    }
+}
+.extension {
+    position: absolute;
+    right: 5%;
+    bottom: 20px;
+    font-size: 14px;
+    padding: 0 24px;
+    color: $white;
+        &::before {
+        content: '';
+        border-top: 2px solid $white;
+        position: absolute;
+        width: 20px;
+        right: 0;
+        top: 50%;
+    }
+}
+
+#girl {
+    height: 400px;
+    path {
+        height: 500px;
+        fill: transparent;
+        stroke: $white;
+        stroke-width: 3px;
+        stroke-dasharray: 3200;
+        stroke-dashoffset: 3200;
+        animation: girline 15s ease forwards .5s;
+    }
+    @keyframes girline {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+}
+
+.tittle {
+    position: relative;
+    margin: 20px 0;
+    &:before {
+        content: '';
+        border-top: 8px solid $green;
+        position: absolute;
+        top: -20px;
+        width: 100px;
+    }
+}
+
+.search-form {
+    .form-control {
+        padding: 3px 10px;
+    }
+    .btn {
+        background-color: $green;
+        .feather {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.bg-green-light{
+    background-color: $green !important;
+}
+.bg-orange{
+    background-color: $orange !important;
+}
+.bg-red{
+    background-color: $red !important;
+}
+.bg-yellow{
+    background-color: $yellow !important;
+}
+.bg-coklat{
+    background-color: $coklat !important;
+}
+
+.text-orange {
+    color: $orange;
+}

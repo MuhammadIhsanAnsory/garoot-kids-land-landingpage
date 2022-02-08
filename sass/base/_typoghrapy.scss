@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('../webfonts/roboto/Roboto-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'roboto-reg';
+    src: url('../webfonts/roboto/Roboto-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'roboto-thin';
+    src: url('../webfonts/roboto/Roboto-Thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'roboto-slab';
+    src: url('../webfonts/roboto/RobotoSlab-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'zen-tokyo';
+    src: url('../webfonts/zentokyo/ZenTokyoZoo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$roboto-bold: 'roboto-bold', sans-serif;
+$roboto-thin: 'roboto-thin', sans-serif;
+$roboto-reg: 'roboto-reg', sans-serif;
+$roboto-slab: 'roboto-slab', sans-serif;
+$zen-tokyo: 'zen-tokyo', sans-serif;
+
+.text-zoo{
+    font-family: $zen-tokyo !important;
+}
+
+// h1, .h1,
+// h2, .h2,
+// h3, .h3,
+// h4, .h4,
+// h5, .h5,
+// h6, .h6 {
+//     font-family: $zen-tokyo;
+// }
